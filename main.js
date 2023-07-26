@@ -27,18 +27,3 @@ switch (edad) {
         break;
 }
 
-
-
-
-//function saludar() {
-//alert ("Hola");
-// }
-
-// saludar();
-
-// function saludar() {
-//   let nombre = prompt("Ingrese el nombre");
-//   alert(`su nombre es ${nombre}`);
-// }
-
-// saludar();
