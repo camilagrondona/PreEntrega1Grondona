@@ -11,17 +11,36 @@ do {
     2- Entre 25 y 35 
     3- Mayor de 35
     `));
-} while (isNaN (edad) || edad < 1 || edad > 3);
+} while (isNaN(edad) || edad < 1 || edad > 3);
 
 switch (edad) {
-    case 1: 
+    case 1:
         alert("¡Genial, has elegido la opción 1, menor de 25!");
         break;
     case 2:
         alert("¡Genial, has elegido la opción 2, entre 25 y 35!");
-        break; 
+        break;
     case 3:
         alert("¡Genial, has elegido la opción 3, mayor de 35!");
-        break; 
+        break;
+}
+
+const suma = (a, b) => a + b;
+const iva = (x) => x * 0.21;
+
+let precioRangoUno = 2000;
+let precioRangoDos = 3000;
+let precioRangoTres = 4000;
+
+precioOpcionUno = suma(precioRangoUno, iva(precioRangoUno));
+precioOpcionDos = suma(precioRangoDos, iva(precioRangoDos));
+precioOpcionTres = suma(precioRangoTres, iva(precioRangoTres));
+
+if (edad === 1) {
+    alert(`El precio de tu tarifa es $${precioOpcionUno}`);
+} else if (edad === 2) {
+    alert(`El precio de tu tarifa es $${precioOpcionDos}`);
+} else {
+    alert(`El precio de tu tarifa es $${precioOpcionTres}`);
 }
 
